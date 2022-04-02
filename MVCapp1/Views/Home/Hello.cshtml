@@ -1,0 +1,22 @@
+﻿@model MVCapp1.Models.Person
+@{
+    Layout = null;
+}
+<html>
+<head>
+ <meta name="viewport" content="width=device-width" />
+ <link rel="stylesheet" href="~/css/site.css"/>
+ <title>Index</title>
+</head>
+<body>
+ <div class="center">
+  <form asp-action="Hello" method="post"> 
+<p>
+ <label asp-for="Name">Your name:</label>
+ <input asp-for="Name" />
+</p>
+ <button type="submit">Submit</button>
+ </form>
+ </div>
+</body>
+</html>
